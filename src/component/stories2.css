@@ -1,0 +1,35 @@
+.stories{
+    margin-left: 12.7%;
+}
+.change{
+height: 52px;
+width: 100%;
+}
+
+/* .story{
+    display: flex;
+} */
+
+.listsection p{
+  font-family: 'latoui_reg';
+  font-size: 184%;
+  color: #6b6c6e;
+  
+  font-weight: normal;
+  text-decoration: none;
+  
+
+}
+
+.listsection-2{
+    position: absolute;
+    left:60%;
+    
+    
+}
+
+.blogdiv{
+    margin-top:18%;
+    margin-bottom: 4%;
+    
+}

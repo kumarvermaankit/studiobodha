@@ -1,0 +1,31 @@
+.tox-editor-header{
+    display: none;
+}
+.casestudies{
+    text-align: center;
+}
+
+.casestudies h1{
+ font-size: 3.4375rem;
+ width:100%;
+color: #f7941e;
+font-family: "PlayfairDisplay-Regular", arial;
+line-height: 5.5rem;
+margin: 0.5rem 0 1.5rem 0;
+}
+
+.casestudies h4{
+ 
+margin-left: 3.5%;
+font-family: "PlayfairDisplaySC-Black", arial;
+color: #6b6c6e;
+}
+
+.casestudies{
+    
+    margin-top: 10%;
+}
+
+.tox-tinymce{
+    border: 0px solid white;
+}

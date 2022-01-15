@@ -2,50 +2,46 @@ import React, { useEffect, useState } from 'react'
 import "./home.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import axios from 'axios';
 export default function Home() {
+    const [images, setimages] = useState(null)
 
 
-    const [images, setimages] = useState([]);
+    useEffect(() => {
+        axios.get("https://studiobodhi9555ankit.herokuapp.com/photo-url/1")
+            .then((res) => {
+                console.log(res);
+                setimages(res.data)
+            })
 
-    // useEffect(() => {
-    //     axios.get("/api").then((result) = {
-    //         setimages(result);
-    //     })
-    // }, [])
+    }, [])
 
 
 
+    console.log(images)
 
 
     function slides() {
         return (
-            <div>
+            <Carousel interval={1000} autoPlay={true} width={"75%"} infiniteLoop={true} dynamicHeight={true} height={"50%"} >
                 {images.map((each) => {
-                    <div>
-                        <img src={each.src} />
-                    </div>
+                    return (
+                        <div>
+                            <img style={{ height: 639.17 }} src={each.picurl} />
+                        </div>
+                    )
+
                 })}
-            </div>
+            </Carousel>
 
         )
     }
 
     return (
         <div className='carousel'>
-            <Carousel interval={1000} autoPlay={true} width={"75%"} infiniteLoop={true} dynamicHeight={true} height={"50%"} >
-                <div>
-                    <img style={{ height: 639.17 }} src="https://digitalsynopsis.com/wp-content/uploads/2015/02/superhero-action-figure-toys-hrjoe-photography-1.jpg" />
 
-                </div>
-                <div>
-                    <img style={{ height: 639.17 }} src="https://digitalsynopsis.com/wp-content/uploads/2015/02/superhero-action-figure-toys-hrjoe-photography-3.jpg" />
+            {images !== null ? slides() : null}
 
-                </div>
-                <div>
-                    <img style={{ height: 639.17 }} src="https://digitalsynopsis.com/wp-content/uploads/2015/02/superhero-action-figure-toys-hrjoe-photography-10.jpg" />
-
-                </div>
-            </Carousel>
         </div>
     )
 }

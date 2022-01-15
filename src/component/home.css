@@ -6,3 +6,31 @@
     display:none;
     
 }
+/* .footer2{
+    width:75%;
+    margin-left: 13.5%;
+    border:none;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc ;
+    height:80px;
+    
+  } */
+
+  .footer2 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+    border-right: 1px solid #e6e7e8;
+    vertical-align: middle;
+    margin-top: 2%;
+  }
+
+  .footer2{
+    margin-top: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+  }

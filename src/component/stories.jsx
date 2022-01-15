@@ -13,14 +13,14 @@ export default function Stories(props) {
                     i++;
                     return (
                         <div className={i != 1 ? "blogdiv" : null}>
-                            <a style={{ textDecoration: "none" }} href={`/blog/${each.id}`}>
+                            <a style={{ textDecoration: "none" }} href={`/blog/${each[0]}`}>
                                 <div style={{ display: "flex" }}>
                                     <div className="listsection">
-                                        <p>{each.title}</p>
+                                        <p>{each[1]}</p>
 
                                     </div>
                                     <div className='listsection-2' >
-                                        <img style={{ width: "100%", height: "60%" }} src="https://kaaru.com/wp-content/uploads/issue_images/2018-10-11.jpg" alt="" title="" />
+                                        <img style={{ width: "100%", height: "60%" }} src={each[2]} alt="" title="" />
                                     </div>
 
 

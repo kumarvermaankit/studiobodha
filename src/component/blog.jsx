@@ -17,12 +17,12 @@ export default function Blog(props) {
 
         console.log("tt")
 
-        axios.get("https://studiobodhi9555ankit.herokuapp.com/blog-data/1")
+        axios.get(`https://studiobodhi9555ankit.herokuapp.com/data/${params.id}`)
             .then((res) => {
                 console.log(res);
 
 
-                setobj(res.data.find(e => e.id.toString() === params.id))
+                setobj(res.data)
             })
 
 

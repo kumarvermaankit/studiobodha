@@ -60,7 +60,7 @@ export default function Contact() {
                 <p>If design is your calling, if you are a risk taker and not a follower, someone who will dedicate themselves to delivering results – KAARU offers the right platform for you to learn, explore and grow. Please send your Portfolio and CV by email to <a href="mailto:careers@kaaru.com" target="_blank">careers@kaaru.com</a></p>
             </div>
             <div class="container">
-                <form >
+                <form id="contact">
                     <h3>Quick Contact</h3>
                     <h4>Contact us today, and get reply with in 24 hours!</h4>
                     <fieldset>
@@ -81,7 +81,7 @@ export default function Contact() {
                     </fieldset>
                 </form>
 
-
+                <p>ajkjbsabjsajb</p>
 
             </div>
         </div>

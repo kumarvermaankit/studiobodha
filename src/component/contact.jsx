@@ -77,7 +77,7 @@ export default function Contact() {
                         <textarea placeholder="Type your Message Here...." value={contactDetails.message} tabindex="5" required name="message" onChange={(event) => Change(event)}  ></textarea>
                     </fieldset>
                     <fieldset>
-                        <button type="submit" onClick={onSubmit} name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                        <button onClick={onSubmit} name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                     </fieldset>
                 </form>
 

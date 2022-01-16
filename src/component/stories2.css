@@ -25,12 +25,16 @@ width: 100%;
 .listsection-2{
     position: absolute;
     left:62%;
- 
+    width: 22%;
+    height: 20%;
     
 }
 
+
+
 .blogdiv{
-    margin-top:18%;
+    margin-top:170px;
     margin-bottom: 8%;
     
 }
+

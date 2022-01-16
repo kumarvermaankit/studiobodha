@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./contact.css"
+import axios from 'axios';
+
 export default function Contact() {
 
 
@@ -25,35 +27,20 @@ export default function Contact() {
 
     console.log(contactDetails)
 
-    function ContactForm() {
-        return (
-            <div class="container">
-                <form id="contact" action="" method="post">
-                    <h3>Quick Contact</h3>
-                    <h4>Contact us today, and get reply with in 24 hours!</h4>
-                    <fieldset>
-                        <input placeholder="Your name" value={contactDetails.name} type="text" tabindex="1" required autofocus name="name" onChange={(event) => Change(event)} />
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address" value={contactDetails.email} type="email" tabindex="2" required name="email" onChange={(event) => Change(event)} />
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number" value={contactDetails.phonenumber} type="tel" tabindex="3" required name="phonenumber" onChange={(event) => Change(event)} />
-                    </fieldset>
+    // function ContactForm() {
+    //     return (
 
-                    <fieldset>
-                        <textarea placeholder="Type your Message Here...." value={contactDetails.message} tabindex="5" required name="message" onChange={(event) => Change(event)}  ></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-                </form>
+    //     )
+    // }
 
 
-            </div>
-        )
+    function onSubmit() {
+        axios.post("https://studiobodhi9555ankit.herokuapp.com/contact-save/1", contactDetails)
+            .then((res) => {
+                console.log(res);
+
+            })
     }
-
 
     return (
         <div style={{ display: "flex" }}>
@@ -72,7 +59,31 @@ export default function Contact() {
                 <h5>careers</h5>
                 <p>If design is your calling, if you are a risk taker and not a follower, someone who will dedicate themselves to delivering results – KAARU offers the right platform for you to learn, explore and grow. Please send your Portfolio and CV by email to <a href="mailto:careers@kaaru.com" target="_blank">careers@kaaru.com</a></p>
             </div>
-            <ContactForm />
+            <div class="container">
+                <form id="contact" action="" method="post">
+                    <h3>Quick Contact</h3>
+                    <h4>Contact us today, and get reply with in 24 hours!</h4>
+                    <fieldset>
+                        <input placeholder="Your name" value={contactDetails.name} type="text" tabindex="1" required autofocus name="name" onChange={(event) => Change(event)} />
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" value={contactDetails.email} type="email" tabindex="2" required name="email" onChange={(event) => Change(event)} />
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number" value={contactDetails.phonenumber} type="tel" tabindex="3" required name="phonenumber" onChange={(event) => Change(event)} />
+                    </fieldset>
+
+                    <fieldset>
+                        <textarea placeholder="Type your Message Here...." value={contactDetails.message} tabindex="5" required name="message" onChange={(event) => Change(event)}  ></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" onClick={onSubmit} name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+
+                <p>ajkjbsabjsajb</p>
+
+            </div>
         </div>
     )
 }

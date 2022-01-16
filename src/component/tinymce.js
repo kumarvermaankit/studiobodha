@@ -52,7 +52,7 @@ export default function Tinymce(props) {
             'bold italic backcolor | alignleft aligncenter codesample' +
             'alignright alignjustify | bullist numlist outdent indent image media  | ' +
             'removeformat |' + '|blockquote|' + '|insertdatetime link  charmap anchor|',
-          content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:20px }',
+          content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:20px } img{max-width:100%;height:auto}',
           menubar: "none",
           // placeholder: "Write your code or add description.... ",
           inline_boundaries: "none",

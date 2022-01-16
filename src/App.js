@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "./App.css"
 import Home from "./component/home"
 import Navbar from './component/navbar';
 import Stories from './component/stories';
@@ -34,7 +34,7 @@ function App() {
 
   return (
 
-    <div>
+    <div className='main-wrapper'>
       <div>
         <Navbar />
 
@@ -60,7 +60,7 @@ function App() {
 
 
 
-      {/* <Footer2 /> */}
+
       {/* <CFooter>
         <Footer2 />
       </CFooter> */}

@@ -16,11 +16,12 @@ export default function Stories(props) {
                             <a style={{ textDecoration: "none" }} href={`/blog/${each[0]}`}>
                                 <div style={{ display: "flex" }}>
                                     <div className="listsection">
-                                        <p>{each[1]}</p>
+                                        <p>{each[1].substring(0, 50) + "..."}</p>
 
                                     </div>
                                     <div className='listsection-2' >
-                                        <img style={{ width: "100%", height: "60%" }} src={each[2]} alt="" title="" />
+
+                                        <img style={{ width: "100%", height: "100%" }} src={each[2]} alt="" title="" />
                                     </div>
 
 
@@ -35,16 +36,22 @@ export default function Stories(props) {
     }
 
     return (
-        <div className="stories">
+        <div>
             <div className="change">
 
             </div>
+            <div className="stories">
 
-            <div>
-                {BlogCreator()}
 
+                <div>
+                    {BlogCreator()}
+
+                </div>
+
+                <div className="change">
+
+                </div>
             </div>
-
 
         </div>
     )

@@ -35,7 +35,7 @@ export default function Blog(props) {
                 <h1>{obj !== undefined ? (obj.title.toUpperCase()) : null}</h1>
 
             </div>
-            <img style={{ width: "74%", marginLeft: "13.9%" }} src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F8%2F7%2Fa%2F602419.jpg&f=1&nofb=1" />
+            <img style={{ width: "74%", marginLeft: "13.9%" }} src={obj.blogphoto} />
             <div style={{ marginLeft: "10.7%", marginTop: "2%" }}>
                 <Tinymce
                     t={obj !== undefined ? obj.content : null}

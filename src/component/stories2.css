@@ -1,5 +1,5 @@
 .stories{
-    margin-left: 12.7%;
+    margin-left: 13.7%;
 }
 .change{
 height: 52px;
@@ -12,7 +12,8 @@ width: 100%;
 
 .listsection p{
   font-family: 'latoui_reg';
-  font-size: 144%;
+  /* font-size: 174%; */
+  font-size: clamp(12px, 2vw, 24px);
   color: #6b6c6e;
   
   font-weight: normal;
@@ -23,13 +24,13 @@ width: 100%;
 
 .listsection-2{
     position: absolute;
-    left:60%;
-    
+    left:62%;
+ 
     
 }
 
 .blogdiv{
     margin-top:18%;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
     
 }

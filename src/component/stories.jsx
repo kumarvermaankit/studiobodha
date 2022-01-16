@@ -20,7 +20,7 @@ export default function Stories(props) {
 
                                     </div>
                                     <div className='listsection-2' >
-                                        <img style={{ width: "100%", height: "100%" }} src={each[2]} alt="" title="" />
+                                        <img style={{ width: "100%", height: "auto", maxHeight: "100%" }} src={each[2]} alt="" title="" />
 
 
                                     </div>

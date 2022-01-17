@@ -4,6 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import Footer2 from './footer2';
+
+
 export default function Home() {
     const [images, setimages] = useState(null)
 

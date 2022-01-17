@@ -1,9 +1,11 @@
 import React from 'react'
 import "./navbar.css"
+import logo from "./SBL.jpg"
 export default function Navbar() {
     return (
         <div className='navbar'>
-            <img style={{ width: "104px", height: "93.33px" }} src="https://kaaru.com/wp-content/themes/twentysixteen/images/karu_logo.jpg" />
+            <a href="/"><img style={{ width: "134px", height: "93.33px" }} src={logo} /></a>
+
             <ul className='menu'>
                 <li>
                     <a href="/" >HOME</a>

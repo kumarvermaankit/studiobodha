@@ -4,7 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import Footer2 from './footer2';
-
+import { Container } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 export default function Home() {
     const [images, setimages] = useState(null)
@@ -26,11 +28,11 @@ export default function Home() {
 
     function slides() {
         return (
-            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"75%"} infiniteLoop={true} dynamicHeight={true} height={"50%"} >
+            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"75%"} infiniteLoop={true} height={"100%"}  >
                 {images.map((each) => {
                     return (
-                        <div>
-                            <img style={{ height: 639.17 }} src={each.picurl} />
+                        <div  >
+                            <img style={{ height: "100%", maxHeight: "100%", minHeight: "100%" }} src={each.picurl} />
                         </div>
                     )
 
@@ -41,14 +43,19 @@ export default function Home() {
     }
 
     return (
-        <div>
-            <div className='carousel'>
+        <Container>
+            <Row >
+                <div className='carousel'>
 
-                {images !== null ? slides() : null}
+                    {images !== null ? slides() : null}
 
-            </div>
-            <Footer2 />
-        </div>
+                </div>
+            </Row>
+            <Row>
+                <Footer2 />
+            </Row>
+
+        </Container>
 
     )
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 import "./stories2.css"
-import Blog from './blog';
+
+import { Container } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 export default function Stories(props) {
 
 

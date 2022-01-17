@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import Insta from "./insta.jpeg"
 export default function Footer2() {
     return (
         // <div>
@@ -20,15 +23,29 @@ export default function Footer2() {
         <footer class="colored-section" id="footer">
             <div class="container-fluid">
                 <div className='footer2'>
-                    <ul style={{ display: "flex" }}>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <span>© StudioBodhi</span>
+                            </Col>
+                            <Col>
+                                <span>All rights reserved</span>
+                            </Col>
+                            <Col>
+                                <a href="https://www.instagram.com/studio_bodhi/" target="_blank" ><img src={Insta} style={{ width: "15%", height: "40%", marginLeft: "60%", marginTop: "2%" }} /></a>
+                            </Col>
+                        </Row>
+
+                    </Container>
+                    {/* <ul style={{ display: "flex" }}>
                         <li>
                             <span>© StudioBodhi</span>
                         </li>
-
+                         
                         <li>
                             <span>All rights reserved</span>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 {/* <div className="footer-right">
                     <ul className="list-inline">

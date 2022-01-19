@@ -7,13 +7,11 @@ import Blog from "./component/blog"
 import Contact from './component/contact';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Fragment, useEffect, useState } from 'react';
-import Footer from './component/footer';
 
 import axios from 'axios';
-import Footer2 from './component/footer2';
 import '@coreui/coreui/dist/css/coreui.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { CFooter } from '@coreui/react'
+import OurStory from './component/ourStory';
 function App() {
 
   const [blogs, setblogs] = useState([]);
@@ -44,7 +42,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/stories">
+          <Route exact path="/work">
             <Stories blogs={blogs} />
           </Route>
           <Route exact path="/blog/:id">
@@ -53,7 +51,9 @@ function App() {
           <Route exact path="/contact">
             <Contact />
           </Route>
-
+          <Route exact path="/ourstory">
+            <OurStory />
+          </Route>
 
         </Router>
       </div>

@@ -31,9 +31,6 @@ export default function Footer2() {
                             <Col>
                                 <span>All rights reserved</span>
                             </Col>
-                            <Col>
-                                <a href="https://www.instagram.com/studio_bodhi/" target="_blank" ><img src={Insta} style={{ width: "15%", height: "40%", marginLeft: "60%", marginTop: "2%" }} /></a>
-                            </Col>
                         </Row>
 
                     </Container>

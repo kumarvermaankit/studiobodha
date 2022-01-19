@@ -28,11 +28,11 @@ export default function Home() {
 
     function slides() {
         return (
-            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"75%"} infiniteLoop={true} height={"100%"}  >
+            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"107%"} infiniteLoop={true}   >
                 {images.map((each) => {
                     return (
                         <div  >
-                            <img style={{ height: "100%", maxHeight: "100%", minHeight: "100%" }} src={each.picurl} />
+                            <img className="slide_image" style={{ width: "100%", aspectRatio: "5/2.8" }} src={each.picurl} />
                         </div>
                     )
 
@@ -51,9 +51,7 @@ export default function Home() {
 
                 </div>
             </Row>
-            <Row>
-                <Footer2 />
-            </Row>
+
 
         </Container>
 

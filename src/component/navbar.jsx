@@ -21,14 +21,14 @@ export default function Navbar() {
                 <li>
                     <a href="/contact" >Contact us</a>
                 </li>
-                {/* <li style={{ width: "10%", marginLeft: "32%" }} >
+                <li style={{ width: "10%", marginLeft: "32%" }} >
                     <a href="https://www.instagram.com/studio_bodhi/" className='social2' ><img style={{ width: "50%", height: "100%" }} src={insta} /></a>
 
                 </li>
                 <li style={{ width: "10%" }}>
                     <a href="https://www.linkedin.com/company/studiobodhii/" className='social2' ><img style={{ width: "50%", height: "100%" }} src={linkedin} /></a>
 
-                </li> */}
+                </li>
                 {/* <Container style={{ width: "20%", marginLeft: "50%" }}>
                     <Row>
                         <Col >

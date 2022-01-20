@@ -87,6 +87,7 @@ Inline styles are more specific than internal or external css styles
 Also last css rule has priority
 
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
 *{
   font-family: 'Shippori Antique', sans-serif;

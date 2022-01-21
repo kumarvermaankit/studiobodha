@@ -1,8 +1,12 @@
 .nav_bar{
-    display: flex;
-    width:75%;
-    margin-left: 13.5%;
+    
+    width:85%;
+    margin-left: 8.4%;
     border-bottom: 1px solid #cccccc;
+    
+    
+    
+    
 }
 
 .menu{
@@ -16,10 +20,31 @@ margin-left: 2rem;
 
 }
 
+.nav_img{
+    width:4%;
+    height:30%;
+}
+
 .menu li{
 font-size: 1vw;
     padding: 1rem 1.2rem;
     text-transform: uppercase;
+}
+
+
+.navlink{
+    color:#6b6c6e;
+    
+    font-size: 1.5vw;
+    
+    text-decoration: none;
+    padding-left: 2%;
+    text-shadow: 3.5px 3.5px #cccccc;
+}
+
+.navlink:hover{
+    text-shadow: none;
+    color:#000
 }
 
 .menu li a{
@@ -32,3 +57,4 @@ font-size: 1vw;
 .menu li :hover{
     color: black;
 }
+

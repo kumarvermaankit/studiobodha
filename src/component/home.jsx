@@ -28,7 +28,7 @@ export default function Home() {
 
     function slides() {
         return (
-            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"107%"} infiniteLoop={true}   >
+            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"103%"} infiniteLoop={true}   >
                 {images.map((each) => {
                     return (
                         <div  >

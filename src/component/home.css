@@ -5,6 +5,8 @@ body{
     margin-top:2%;
     
     height:70%;
+    position: relative;
+    right: 0.2%;
 } 
 .thumbs-wrapper{
     display:none;

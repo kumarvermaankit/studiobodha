@@ -42,6 +42,13 @@ export default function Contact() {
                 console.log(res);
 
             })
+
+        setcontactDetails({
+            name: "",
+            phonenumber: "",
+            email: "",
+            message: ""
+        })
     }
 
     return (

@@ -65,7 +65,7 @@ export default function Contact() {
                     </Col>
                     <Col sm={6}>
                         <div class="container">
-                            <form id="contact" action="" method="post">
+                            <div id="contact" >
                                 <h3>Quick Contact</h3>
                                 <h4>Contact us today, and get reply with in 24 hours!</h4>
                                 <fieldset>
@@ -84,7 +84,7 @@ export default function Contact() {
                                 <fieldset>
                                     <button type="submit" onClick={onSubmit} name="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                                 </fieldset>
-                            </form>
+                            </div>
 
                             <p></p>
 

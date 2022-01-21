@@ -51,7 +51,7 @@ export default function Contact() {
                     <Col sm={6}>
                         <div class="contact">
                             <h5><b>visit us</b></h5>
-                            <p>&nbsp;Drop a mail to <a href="mailto:info@kaaru.com" target="_blank">main@studiobodhi.in </a>&nbsp;to make prior appointments before you visit us.</p>
+                            <p>&nbsp;Drop a mail to <a href="mail@studiobodhi.in" target="_blank">mail@studiobodhi.in </a>&nbsp;to make prior appointments before you visit us.</p>
                             <p>Our timings are from 9:30AM to 5.30PM. We’re closed on all Sundays, Forth Saturdays and National Holidays.</p>
 
                             <h6>OUR ADDRESS</h6>
@@ -61,7 +61,7 @@ export default function Contact() {
 
                             <hr />
                             <h5>careers</h5>
-                            <p>If you are interested in working with us drop your resumes at mail.studiobodhi.in.<a href="mailto:mail.studiobodhi.in" target="_blank">mail.studiobodhi.in.</a></p>
+                            <p>If you are interested in working with us drop your resumes at <a href="mailto:mail.studiobodhi.in" target="_blank">mail.studiobodhi.in.</a></p>
                         </div>
                     </Col>
                     <Col sm={6}>

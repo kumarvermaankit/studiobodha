@@ -37,8 +37,8 @@ export default function Navbar() {
             <Nav.Item eventKey="B" href="ourstory" className='navlink'  >About Us</Nav.Item>
             <Nav.Item eventKey="C" href="/work" className='navlink' >Our Work</Nav.Item>
             <Nav.Item eventKey="D" href="/contact" className='navlink' >Contact us</Nav.Item>
-            <Nav.Item eventKey="E" style={{ marginLeft: "34%" }} href="https://www.instagram.com/studio_bodhi/" className='navlink' ><img className='nav_img' src={insta} /></Nav.Item>
-            <Nav.Item eventKey="D" href="https://www.linkedin.com/company/studiobodhii/" className='navlink' ><img className='nav_img' src={linkedin} /></Nav.Item>
+            <Nav.Item eventKey="E" style={{ marginLeft: "34%" }} href="https://www.instagram.com/studio_bodhi/" target="_blank" className='navlink' ><img className='nav_img' src={insta} /></Nav.Item>
+            <Nav.Item eventKey="D" href="https://www.linkedin.com/company/studiobodhii/" className='navlink' target="_blank" ><img className='nav_img' src={linkedin} /></Nav.Item>
 
         </Nav>
 

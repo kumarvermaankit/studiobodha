@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
 .column, .columns {
     padding-left: 0.5625rem;
     padding-right: 0.5625rem;
 }
 
+body{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
 
 /* .listsection-2{
 
@@ -17,7 +22,7 @@ margin-left: 17%;
 @import url('1024.css') (min-width:769px) and (max-width:1024px);
 @import url('1280.css') (min-width:1025px); */
 body {
-  font-family: "Akkurat-Light", Times, serif;
+  /* font-family: "Akkurat-Light", Times, serif; */
   color: #000;
   font-size: 0.8125rem;
   font-weight: 100;

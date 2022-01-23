@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./home.css"
+import "./home2.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
@@ -28,11 +28,11 @@ export default function Home() {
 
     function slides() {
         return (
-            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"99.5%"} infiniteLoop={true}   >
+            <Carousel animationHandler="fade" interval={3000} autoPlay={true} width={"85%"} infiniteLoop={true}   >
                 {images.map((each) => {
                     return (
                         <div  >
-                            <img className="slide_image" style={{ width: "100%", aspectRatio: "5/2.8" }} src={each.picurl} />
+                            <img className="slide_image" style={{ width: "100%" }} src={each.picurl} />
                         </div>
                     )
 
@@ -43,17 +43,17 @@ export default function Home() {
     }
 
     return (
-        <Container>
-            <Row >
-                <div className='carousel'>
-
-                    {images !== null ? slides() : null}
-
-                </div>
-            </Row>
 
 
-        </Container>
+        <div className='carousel'>
+
+            {images !== null ? slides() : null}
+
+        </div>
+
+
+
+
 
     )
 }
